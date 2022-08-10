@@ -1,0 +1,245 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+:root {
+  --container-width: 1270px;
+  --container-padding: 15px;
+}
+
+body {
+  font-weight: 600;
+  font-size: 20px;
+  font-family: "Work Sans", sans-serif;
+  background: -webkit-gradient(linear, left top, right top, from(rgb(31, 39, 47)), color-stop(80%, rgb(62, 75, 88)), to(rgb(73, 86, 98)));
+  background: linear-gradient(90deg, rgb(31, 39, 47) 0%, rgb(62, 75, 88) 80%, rgb(73, 86, 98) 100%);
+}
+
+.container {
+  max-width: var(--container-width);
+  padding: 0 var(--container-padding);
+  margin: 0 auto;
+}
+
+.block {
+  background-color: chartreuse;
+  height: 200px;
+}
+
+.header {
+  padding-top: 30px;
+}
+.header__top {
+  margin-bottom: 90px;
+}
+.header__content {
+  max-width: 600px;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 80px;
+     -moz-column-gap: 80px;
+          column-gap: 80px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+.nav__lIst {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 80px;
+     -moz-column-gap: 80px;
+          column-gap: 80px;
+}
+.nav__lIst :hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.nav__contact :hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.header__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__img {
+  margin-top: -120px;
+  margin-left: 150px;
+}
+
+.header__img img {
+  border-radius: 50px;
+}
+
+.header__content {
+  color: #fff;
+}
+.header__badge {
+  color: rgb(249, 83, 83);
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+.header__title {
+  font-size: 30px;
+  margin-bottom: 35px;
+  letter-spacing: 4px;
+}
+.header__text {
+  margin-bottom: 70px;
+  font-size: 25px;
+  opacity: 0.8;
+}
+.h2 {
+  color: rgb(249, 83, 83);
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+.a__link {
+  color: #fff;
+  padding-bottom: 30px;
+  padding-right: 20px;
+}
+.a__link :hover {
+  cursor: pointer;
+}
+
+.table {
+  width: 70%;
+  color: #fff;
+  padding-bottom: 40px;
+}
+
+.table th {
+  height: 50px;
+  text-align: left;
+}
+
+.table tr:hover {
+  background-color: rgb(249, 83, 83);
+  opacity: 0.8;
+}
+
+.form {
+  padding-bottom: 30px;
+}
+
+.form label {
+  color: #fff;
+}
+
+.input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  -webkit-box-shadow: 2px 2px 2px 2px rgb(249, 83, 83);
+          box-shadow: 2px 2px 2px 2px rgb(249, 83, 83);
+  border-radius: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.btr {
+  background: none;
+  border: 2px solid rgb(249, 83, 83);
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 20px;
+  background: transparent;
+}
+
+.btr:hover {
+  background: rgb(249, 83, 83);
+  opacity: 0.8;
+  color: #000;
+}
